@@ -81,8 +81,8 @@ Below were the results of the votes by county
         txt_file.write(largest_county_results
  ```
  
- Denver was the largest county and was printed as follows: 
-    * Largest County Turnout: Denver
+Denver was the largest county and was printed as follows: 
+  * Largest County Turnout: Denver
   
 * Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
   * In order to get the votes each candidate received I iterated over the `candidate_votes` dictionary then I created a variable `vote_percentage` to calculate the percentage of votes by dividing the number of votes for each candidate by the total number of votes. This was then multiplied by 100 and then formatted to show as a percentage next to each candidate name and to have the corresponding total votes after the percentage.
@@ -97,10 +97,10 @@ for candidate_name in candidate_votes:
         txt_file.write(candidate_results)
  ```
  
- Below were the results of the votes by candidate
-    * Charles Casper Stockham: 23.0% (85,213)
-    * Diana DeGette: 73.8% (272,892)
-    * Raymon Anthony Doane: 3.1% (11,606)
+Below were the results of the votes by candidate
+  * Charles Casper Stockham: 23.0% (85,213)
+  * Diana DeGette: 73.8% (272,892)
+  * Raymon Anthony Doane: 3.1% (11,606)
 
 * Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
   * To find the candidate that won the election, I used the `winning_count` and `winning_percentage` variables I created earlier in the code to determine if a candidate had more votes and a higher voter percentage than another candidate as I went through the dictionary `candidate_votes` containing the candidate name and their vote counts. I then formatted it to print the winner and a summary of their vote count and percentage to the terminal and the text file. 
