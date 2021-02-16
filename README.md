@@ -98,9 +98,9 @@ for candidate_name in candidate_votes:
  ```
  
  Below were the results of the votes by candidate
-- Charles Casper Stockham: 23.0% (85,213)
-- Diana DeGette: 73.8% (272,892)
-- Raymon Anthony Doane: 3.1% (11,606)
+Charles Casper Stockham: 23.0% (85,213)
+Diana DeGette: 73.8% (272,892)
+Raymon Anthony Doane: 3.1% (11,606)
 
 * Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
 - To find the candidate that won the election, I used the `winning_count` and `winning_percentage` variables I created earlier in the code to determine if a candidate had more votes and a higher voter percentage than another candidate as I went through the dictionary `candidate_votes` containing the candidate name and their vote counts. I then formatted it to print the winner and a summary of their vote count and percentage to the terminal and the text file. 
@@ -120,9 +120,9 @@ for candidate_name in candidate_votes:
 ```
  Below is how the winner summary looked in the terminal and text file: 
  
-  - Winner: Diana DeGette
-  - Winning Vote Count: 272,892
-  - Winning Percentage: 73.8%
+   Winner: Diana DeGette
+   Winning Vote Count: 272,892
+   Winning Percentage: 73.8%
 
 
 ## Challenge Summary
