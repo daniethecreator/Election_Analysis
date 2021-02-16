@@ -38,7 +38,7 @@ The Colorado Board of Elections employee has asked for a few additional data req
 The following election outcomes were asked to be addressed. 
 
 * How many votes were cast in this congressional election?
-   - The total number of votes in the congressional election was 369,711. This was discovered after initializing a vote counter `total_votes = 0`. Then I created a variable and a path to the csv file using `file_to_load = os.path.join("Resources", "election_results.csv")`. After the `file_to_load` variable had the path to the `election_results.csv` file, I opened the csv file using a with statement, `with open(file_to_load) as election_data:` and then iterated over each row of the file adding 1 to the total vote count for each row `for row in reader: total_votes = total_votes + 1`. The `election_results` variable was then used to store the formated string containing the `total_votes` variable and was printed to the terminal and written to the `analysis/election_analysis.txt` file
+   * The total number of votes in the congressional election was 369,711. This was discovered after initializing a vote counter `total_votes = 0`. Then I created a variable and a path to the csv file using `file_to_load = os.path.join("Resources", "election_results.csv")`. After the `file_to_load` variable had the path to the `election_results.csv` file, I opened the csv file using a with statement, `with open(file_to_load) as election_data:` and then iterated over each row of the file adding 1 to the total vote count for each row `for row in reader: total_votes = total_votes + 1`. The `election_results` variable was then used to store the formated string containing the `total_votes` variable and was printed to the terminal and written to the `analysis/election_analysis.txt` file
 ```python
 file_to_save = os.path.join("analysis", "election_analysis.txt")
 with open(file_to_save, "w") as txt_file:
@@ -52,7 +52,7 @@ with open(file_to_save, "w") as txt_file:
 ```
    
 * Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
-  - After counting the votes for each county, I created a variable `county_vote_percentage` to calculate the percentage of votes by dividing the number of votes for each county by the total number of votes. This was thend multiplied by 100 and then formatted to show as a percentage next to each county and to have the corresponding total votes after the percentage. 
+  * After counting the votes for each county, I created a variable `county_vote_percentage` to calculate the percentage of votes by dividing the number of votes for each county by the total number of votes. This was thend multiplied by 100 and then formatted to show as a percentage next to each county and to have the corresponding total votes after the percentage. 
 
 ```python 
 for county_name in county_dict:
@@ -71,7 +71,7 @@ Below were the results of the votes by county
   * Arapahoe: 6.7% (24,801)
 
 * Which county had the largest number of votes?
-- Since I already had the total number of votes of each county, calculating which county had the largest of votes required comparing a county to the next county to see which one had the most votes and after comparing all the counties, printing the county as the same format as the votes by county. 
+ * Since I already had the total number of votes of each county, calculating which county had the largest of votes required comparing a county to the next county to see which one had the most votes and after comparing all the counties, printing the county as the same format as the votes by county. 
 
 ```python
         if county_vote_count > largest_county_vote:
@@ -85,7 +85,7 @@ Below were the results of the votes by county
  Largest County Turnout: Denver
   
 * Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
-- In order to get the votes each candidate received I iterated over the `candidate_votes` dictionary then I created a variable `vote_percentage` to calculate the percentage of votes by dividing the number of votes for each candidate by the total number of votes. This was then multiplied by 100 and then formatted to show as a percentage next to each candidate name and to have the corresponding total votes after the percentage.
+ * In order to get the votes each candidate received I iterated over the `candidate_votes` dictionary then I created a variable `vote_percentage` to calculate the percentage of votes by dividing the number of votes for each candidate by the total number of votes. This was then multiplied by 100 and then formatted to show as a percentage next to each candidate name and to have the corresponding total votes after the percentage.
 
 ```python
 for candidate_name in candidate_votes:
@@ -103,7 +103,7 @@ Diana DeGette: 73.8% (272,892)
 Raymon Anthony Doane: 3.1% (11,606)
 
 * Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
-- To find the candidate that won the election, I used the `winning_count` and `winning_percentage` variables I created earlier in the code to determine if a candidate had more votes and a higher voter percentage than another candidate as I went through the dictionary `candidate_votes` containing the candidate name and their vote counts. I then formatted it to print the winner and a summary of their vote count and percentage to the terminal and the text file. 
+ * To find the candidate that won the election, I used the `winning_count` and `winning_percentage` variables I created earlier in the code to determine if a candidate had more votes and a higher voter percentage than another candidate as I went through the dictionary `candidate_votes` containing the candidate name and their vote counts. I then formatted it to print the winner and a summary of their vote count and percentage to the terminal and the text file. 
 
 ```python
         if (votes > winning_count) and (vote_percentage > winning_percentage):
