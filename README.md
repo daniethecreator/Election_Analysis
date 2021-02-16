@@ -66,15 +66,14 @@ for county_name in county_dict:
 Below were the results of the votes by county
 
 - County Votes:
-- Jefferson: 10.5% (38,855)
-- Denver: 82.8% (306,055)
-- Arapahoe: 6.7% (24,801)
+  * Jefferson: 10.5% (38,855)
+  * Denver: 82.8% (306,055)
+  * Arapahoe: 6.7% (24,801)
 
 * Which county had the largest number of votes?
 - Since I already had the total number of votes of each county, calculating which county had the largest of votes required comparing a county to the next county to see which one had the most votes and after comparing all the counties, printing the county as the same format as the votes by county. 
 
 ```python
-({county_vote_count:,})\n")
         if county_vote_count > largest_county_vote:
              largest_county = county_name
              largest_county_vote = county_vote_count
