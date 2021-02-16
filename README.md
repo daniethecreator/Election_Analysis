@@ -71,7 +71,7 @@ Below were the results of the votes by county
   * Arapahoe: 6.7% (24,801)
 
 * Which county had the largest number of votes?
- * Since I already had the total number of votes of each county, calculating which county had the largest of votes required comparing a county to the next county to see which one had the most votes and after comparing all the counties, printing the county as the same format as the votes by county. 
+  * Since I already had the total number of votes of each county, calculating which county had the largest of votes required comparing a county to the next county to see which one had the most votes and after comparing all the counties, printing the county as the same format as the votes by county. 
 
 ```python
         if county_vote_count > largest_county_vote:
@@ -85,7 +85,7 @@ Below were the results of the votes by county
  Largest County Turnout: Denver
   
 * Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
- * In order to get the votes each candidate received I iterated over the `candidate_votes` dictionary then I created a variable `vote_percentage` to calculate the percentage of votes by dividing the number of votes for each candidate by the total number of votes. This was then multiplied by 100 and then formatted to show as a percentage next to each candidate name and to have the corresponding total votes after the percentage.
+  * In order to get the votes each candidate received I iterated over the `candidate_votes` dictionary then I created a variable `vote_percentage` to calculate the percentage of votes by dividing the number of votes for each candidate by the total number of votes. This was then multiplied by 100 and then formatted to show as a percentage next to each candidate name and to have the corresponding total votes after the percentage.
 
 ```python
 for candidate_name in candidate_votes:
@@ -98,12 +98,12 @@ for candidate_name in candidate_votes:
  ```
  
  Below were the results of the votes by candidate
-Charles Casper Stockham: 23.0% (85,213)
-Diana DeGette: 73.8% (272,892)
-Raymon Anthony Doane: 3.1% (11,606)
+    * Charles Casper Stockham: 23.0% (85,213)
+    * Diana DeGette: 73.8% (272,892)
+    * Raymon Anthony Doane: 3.1% (11,606)
 
 * Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
- * To find the candidate that won the election, I used the `winning_count` and `winning_percentage` variables I created earlier in the code to determine if a candidate had more votes and a higher voter percentage than another candidate as I went through the dictionary `candidate_votes` containing the candidate name and their vote counts. I then formatted it to print the winner and a summary of their vote count and percentage to the terminal and the text file. 
+  * To find the candidate that won the election, I used the `winning_count` and `winning_percentage` variables I created earlier in the code to determine if a candidate had more votes and a higher voter percentage than another candidate as I went through the dictionary `candidate_votes` containing the candidate name and their vote counts. I then formatted it to print the winner and a summary of their vote count and percentage to the terminal and the text file. 
 
 ```python
         if (votes > winning_count) and (vote_percentage > winning_percentage):
@@ -120,9 +120,9 @@ Raymon Anthony Doane: 3.1% (11,606)
 ```
  Below is how the winner summary looked in the terminal and text file: 
  
-   Winner: Diana DeGette
-   Winning Vote Count: 272,892
-   Winning Percentage: 73.8%
+    * Winner: Diana DeGette
+    * Winning Vote Count: 272,892
+    * Winning Percentage: 73.8%
 
 
 ## Challenge Summary
