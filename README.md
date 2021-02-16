@@ -65,10 +65,10 @@ for county_name in county_dict:
 
 Below were the results of the votes by county
 
-- County Votes:
-  * Jefferson: 10.5% (38,855)
-  * Denver: 82.8% (306,055)
-  * Arapahoe: 6.7% (24,801)
+  * County Votes:
+    * Jefferson: 10.5% (38,855)
+    * Denver: 82.8% (306,055)
+    * Arapahoe: 6.7% (24,801)
 
 * Which county had the largest number of votes?
   * Since I already had the total number of votes of each county, calculating which county had the largest of votes required comparing a county to the next county to see which one had the most votes and after comparing all the counties, printing the county as the same format as the votes by county. 
@@ -82,7 +82,7 @@ Below were the results of the votes by county
  ```
  
  Denver was the largest county and was printed as follows: 
- Largest County Turnout: Denver
+    * Largest County Turnout: Denver
   
 * Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
   * In order to get the votes each candidate received I iterated over the `candidate_votes` dictionary then I created a variable `vote_percentage` to calculate the percentage of votes by dividing the number of votes for each candidate by the total number of votes. This was then multiplied by 100 and then formatted to show as a percentage next to each candidate name and to have the corresponding total votes after the percentage.
